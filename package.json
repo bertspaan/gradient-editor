@@ -1,0 +1,16 @@
+{
+  "author": "Bert Spaan",
+  "name": "gradient-editor",
+  "description": "SVG gradient editor with export functionality",
+  "version": "0.0.1",
+  "homepage": "https://github.com/waagsociety/gradient-editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waagsociety/gradient-editor.git"
+  },
+  "dependencies": {
+    "d3": "3.3.9"    
+  },
+  "main": "gradient-editor.js",
+  "optionalDependencies": {}
+}
