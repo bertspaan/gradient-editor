@@ -3,10 +3,10 @@
   "name": "gradient-editor",
   "description": "SVG gradient editor with export functionality",
   "version": "0.0.1",
-  "homepage": "https://github.com/waagsociety/gradient-editor",
+  "homepage": "https://github.com/bertspaan/gradient-editor",
   "repository": {
     "type": "git",
-    "url": "https://github.com/waagsociety/gradient-editor.git"
+    "url": "https://github.com/bertspaan/gradient-editor.git"
   },
   "dependencies": {
     "d3": "3.3.9"    

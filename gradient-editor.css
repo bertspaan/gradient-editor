@@ -1,0 +1,40 @@
+.gradient-editor-container * {
+  margin: 0;
+  padding: 0;
+}
+
+.gradient-editor-container {
+  position: relative;  
+}
+
+.gradient-editor-gradient,
+.gradient-editor-stops {
+  left: 5px;
+  right: 5px;
+}
+
+.gradient-editor-gradient {
+  position: absolute;
+  top: 0;
+
+  bottom: 30px;
+  left: 5px;
+  right: 5px;
+}
+
+.gradient-editor-stops {
+  position: absolute;
+  bottom: 0px;
+  height: 30px;
+}
+
+.gradient-editor-stop {
+  list-style-type: none;
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  height: 30px;
+  width: 20px;
+  margin-left: -10px;
+
+}

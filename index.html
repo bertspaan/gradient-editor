@@ -4,12 +4,54 @@
 <meta charset=utf-8 />
 <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
 <link href='css/style.css' rel='stylesheet' />
+<link href='gradient-editor.css' rel='stylesheet' />
+<script src='http://d3js.org/d3.v3.min.js' charset='utf-8'></script>
+<script src='gradient-editor.js'></script>
 <title>Gradient Editor</title>
 </head>
 <body>
-  <script src='http://d3js.org/d3.v3.min.js' charset='utf-8'></script>
-  <script src='gradient-editor.js'></script>
+  <div id="gradient-editor">
+  </div>
+  <div id="output">
+    <div id="output-gradient"></div>
+    <div id="output-css"></div>
+    <div id="output-image"></div>
+  </div>
   <script>
+  
+    var options = {
+      gradient: {
+        stops: [
+          {
+            color: "rgba(98,125,77,1)",
+            position: "0%",
+          },
+          {
+            color: "rgba(171,171,36,0.37)",
+            position: "28%",
+          },
+          {
+            color: "rgba(234,211,0,0.58)",
+            position: "52%",
+          },
+          {
+            color: "rgba(244,34,34,1)",
+            position: "100%",
+          }
+        ]
+      }
+    };
+    
+    var gradientEditor = new GradientEditor('gradient-editor', options);
+    
+    var css = gradientEditor.toCSS();
+    
+    d3.select('#output-gradient').style('background', css);
+    console.log(css);
+    // gradientEditor.on('change', function() {
+    //   console.log(gradientEditor.toCSS());
+    // });  
+  
   </script>
 </body>
 </html>
